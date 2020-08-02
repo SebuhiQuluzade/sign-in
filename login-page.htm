@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="login-page.css" />
+        <div id="main">
+            <div id="login-page">
+                <form method="get">
+                    <h2 id="title">Giriş</h2>
+                    <div class="inp">
+                        <span class="log-icon"> <a class="fa fa-envelope"></a> </span>
+                        <input class="" placeholder="E-poçt" type="email" required />
+                        <div id="error"></div>
+
+                        <span class="log-icon"> <a class="fa fa-lock"></a> </span>
+
+                        <input class="password" placeholder="Şifrə" type="password" min="6" required />
+                    </div>
+                    <div id="password-length"></div>
+                    <button class=" sign-in" type="submit" onclick="sbt()">Daxil Ol</button>        
+                    <div class=" sign-up" onclick="sign_up()">
+                     <span>Yeni Hesab Yarat</span>   
+                    </div>
+                </form>
+                <div id="forget"><a href="#">Şifrəni unutmusunuz?</a></div>
+            </div>
+        </div>
+
+        <script src="login-page.js"></script>
+    </body>
+</html>
